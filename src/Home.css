@@ -1,0 +1,10 @@
+.pageContainer {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.profilePhoto {
+    margin: auto 0;
+    height: 500px;
+}

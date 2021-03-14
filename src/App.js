@@ -2,6 +2,7 @@ import ReduxDemonstration from "./ReduxDemonstration";
 import "./App.css";
 import { useState } from "react";
 import AnimationsDemonstration from "./AnimationsDemonstration";
+import Home from "./Home";
 
 // ROUTING
 const routes = [
@@ -33,7 +34,7 @@ function App() {
         </div>
       </section>
       <section className="body">
-        {currentRoute === "home" && <div>Hi</div>}
+        {currentRoute === "home" && <Home />}
         {currentRoute === "redux" && <ReduxDemonstration />}
         {currentRoute === "animations" && <AnimationsDemonstration />}
       </section>

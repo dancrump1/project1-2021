@@ -2,7 +2,7 @@ import { createSlice, configureStore, createSelector } from "@reduxjs/toolkit";
 import { useEffect } from "react";
 import { counterSlice } from "./Store";
 import "./App.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 // ROUTING
 const routes = [
@@ -23,6 +23,8 @@ const renderNavButtons = () => {
 function App() {
     const dispatch = useDispatch();
   const { add, minus } = counterSlice.actions;
+
+  const reduxValue = useSelector(state => state.value)
 
   return (
     <div className="app">
@@ -48,6 +50,7 @@ function App() {
             name="minus"
             onClick={() => dispatch(minus())}
           />
+          <div>Value: {reduxValue}</div>
         </div>
       </section>
       <section className="footer">footer</section>

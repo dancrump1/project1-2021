@@ -1,27 +1,29 @@
 import ReduxDemonstration from "./ReduxDemonstration";
 import "./App.css";
 import { useState } from "react";
+import AnimationsDemonstration from "./AnimationsDemonstration";
 
 // ROUTING
 const routes = [
-  { name: "Home", location: 'home' },
-  { name: "redux store", location: 'redux' },
-  { name: "Animations" },
+  { name: "Home", location: "home" },
+  { name: "redux store", location: "redux" },
+  { name: "Animations", location: "animations" },
   { name: "other stuff" },
 ];
 
 const renderNavButtons = (setCurrentRoute) => {
   return routes.map((route) => (
     <div className="navButtonContainer">
-      <button onClick={() => setCurrentRoute(route.location)}>{route.name}</button>
+      <button onClick={() => setCurrentRoute(route.location)}>
+        {route.name}
+      </button>
     </div>
   ));
 };
 
 // BASE APP
-function App() { 
-
-    const [currentRoute, setCurrentRoute] = useState('home');
+function App() {
+  const [currentRoute, setCurrentRoute] = useState("home");
 
   return (
     <div className="app">
@@ -33,6 +35,7 @@ function App() {
       <section className="body">
         {currentRoute === "home" && <div>Hi</div>}
         {currentRoute === "redux" && <ReduxDemonstration />}
+        {currentRoute === "animations" && <AnimationsDemonstration />}
       </section>
       <section className="footer">footer</section>
     </div>

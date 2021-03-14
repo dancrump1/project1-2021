@@ -17,6 +17,18 @@
   background-color: #e27d60;
 }
 
+.sideNavContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 100%;
+}
+
+.navButton {
+  margin: 7px 5px;
+  padding: 15px 0;
+}
+
 .body {
   flex-basis: calc(100% - var(--side-nav-width));
   height: calc(100% - 30px);

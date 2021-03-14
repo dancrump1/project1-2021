@@ -14,11 +14,9 @@ const routes = [
 
 const renderNavButtons = (setCurrentRoute) => {
   return routes.map((route) => (
-    <div className="navButtonContainer">
-      <button onClick={() => setCurrentRoute(route.location)}>
+      <button className="navButton" onClick={() => setCurrentRoute(route.location)}>
         {route.name}
       </button>
-    </div>
   ));
 };
 
@@ -30,7 +28,7 @@ function App() {
     <div className="app">
       <section className="sideNav">
         <div className="sideNavContainer">
-          <div>{renderNavButtons(setCurrentRoute)}</div>
+          {renderNavButtons(setCurrentRoute)}
         </div>
       </section>
       <section className="body">

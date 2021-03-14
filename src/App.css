@@ -1,0 +1,44 @@
+:root {
+  --side-nav-width: 120px;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #c38d9e;
+}
+
+.sideNav {
+  flex-basis: var(--side-nav-width);
+  height: calc(100% - 30px);
+  background-color: #e27d60;
+}
+
+.sideNavContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 100%;
+}
+
+.navButton {
+  margin: 7px 5px;
+  padding: 15px 0;
+}
+
+.body {
+  flex-basis: calc(100% - var(--side-nav-width));
+  height: calc(100% - 30px);
+  width: 100%;
+  background-color: #41b3a3;
+}
+
+.footer {
+  flex-basis: 100%;
+  background-color: blue;
+  height: 30px;
+  width: 100%;
+}

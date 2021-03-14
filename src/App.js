@@ -18,8 +18,6 @@ const renderNavButtons = () => {
 
 // BASE APP
 function App() {
-
-
   return (
     <div className="app">
       <section className="sideNav">

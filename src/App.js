@@ -1,6 +1,6 @@
 import ReduxDemonstration from "./ReduxDemonstration";
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import AnimationsDemonstration from "./AnimationsDemonstration";
 import Home from "./Home";
 

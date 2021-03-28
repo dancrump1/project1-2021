@@ -1,0 +1,20 @@
+{
+  "terminal.integrated.shell.windows": "C:\\cmder\\vendor\\git-for-windows\\bin\\bash.exe",
+  "git.path": "C:\\cmder\\vendor\\git-for-windows\\bin\\git.exe",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "breadcrumbs.enabled": true,
+  "typescript.preferences.quoteStyle": "single",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "debug.toolBarLocation": "docked",
+  "diffEditor.renderSideBySide": true,
+  "window.zoomLevel": 0,
+  "vim.neovimPath": "C:\\Neovim\\bin\\nvim.exe",
+  "editor.formatOnSave": true
+}

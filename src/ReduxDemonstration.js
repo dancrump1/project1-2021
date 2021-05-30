@@ -21,57 +21,42 @@ function ReduxDemonstration() {
 
   return (
     <div>
-      <label for="add">Add 1</label>
       <input
         type="button"
         id="add"
-        name="add"
-        label="+"
+        value="Add 1 +"
         onClick={() => dispatch(add())}
       />
-      <label for="add">Subtract 1</label>
       <input
         type="button"
         id="minus"
-        name="minus"
+        value="Minus 1 -"
         onClick={() => dispatch(minus())}
       />
       <div>Value: {reduxValue}</div>
 
       <section>
         <div>
-          <label for="totalXUp">Increase x by 1</label>
           <input
             type="button"
-            id="totalXUp"
-            name="totalXUp"
-            label="+"
+            value="Increase x by 1"
             onClick={() => dispatch(increaseX())}
           />
-          <label for="totalXDown">Decrease x by 1</label>
           <input
             type="button"
-            id="totalXDown"
-            name="totalXDown"
-            label="-"
+            value="Decrease x by "
             onClick={() => dispatch(decreaseX())}
           />
         </div>
         <div>
-          <label for="totalYUp">Increase y by 1</label>
           <input
             type="button"
-            id="totalYUp"
-            name="totalYUp"
-            label="+"
+            value="Increase y by 1"
             onClick={() => dispatch(increaseY())}
           />
-          <label for="totalYDown">Decrease y by 1</label>
           <input
             type="button"
-            id="totalYDown"
-            name="totalYDown"
-            label="-"
+            value="Decrease y by 1"
             onClick={() => dispatch(decreaseY())}
           />
         </div>

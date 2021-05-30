@@ -1,6 +1,8 @@
 :root {
-  --side-nav-width: 120px;
+  --side-nav-width: 220px;
 }
+
+/* Mobile */
 
 .app {
   display: flex;
@@ -14,7 +16,7 @@
 .sideNav {
   flex-basis: var(--side-nav-width);
   height: calc(100% - 30px);
-  background-color: #e27d60;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.281), #e27c607e);
 }
 
 .sideNavContainer {
@@ -41,4 +43,27 @@
   background-color: blue;
   height: 30px;
   width: 100%;
+}
+
+/* Table */
+@media only screen and (min-width: 800px) {
+  .app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: teal;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1400px) {
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: green;
+  }
 }

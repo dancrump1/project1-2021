@@ -1,10 +1,12 @@
 import ReduxDemonstration from "./ReduxDemonstration";
-import "./App.css";
 import React, { useState } from "react";
+import {motion} from 'framer-motion';
 import AnimationsDemonstration from "./AnimationsDemonstration";
 import Home from "./Home";
+import "./App.css";
 
 // ROUTING
+// TODO: use react-router or something to actually use the url to update route
 const routes = [
   { name: "Home", location: "home" },
   { name: "redux store", location: "redux" },
@@ -14,12 +16,13 @@ const routes = [
 
 const renderNavButtons = (setCurrentRoute) => {
   return routes.map((route) => (
-    <button
+    <motion.button
       className="navButton"
       onClick={() => setCurrentRoute(route.location)}
+      whileHover={{scale: .95}}
     >
       {route.name}
-    </button>
+    </motion.button>
   ));
 };
 
@@ -35,10 +38,10 @@ function App() {
         </div>
       </section>
       <section className="body">
-        {currentRoute === "home" && <Home />}
-        {currentRoute === "redux" && <ReduxDemonstration />}
-        {currentRoute === "animations" && <AnimationsDemonstration />}
-        {currentRoute === "otherStuff" && (
+        {currentRoute === routes[0].location && <Home />}
+        {currentRoute === routes[1].location && <ReduxDemonstration />}
+        {currentRoute === routes[2].location && <AnimationsDemonstration />}
+        {currentRoute === routes[3].location && (
           <div>
             <h1>
               Please give these links a couple minutes to load. They may fail,

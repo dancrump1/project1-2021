@@ -9,7 +9,7 @@ const AnimationsDemonstration = () => {
         <motion.div
           style={{
             width: "50px",
-            height: "60px",
+            height: "70px",
             backgroundColor: "lightgrey",
             border: "15px solid teal",
             overflow: "hidden",

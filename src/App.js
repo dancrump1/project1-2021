@@ -21,7 +21,7 @@ const renderNavButtons = (setCurrentRoute) => {
       onClick={() => setCurrentRoute(route.location)}
       whileHover={{scale: .95}}
     >
-      {route.name}
+      <div className="navButtonText">{route.name}</div>
     </motion.button>
   ));
 };
@@ -55,7 +55,6 @@ function App() {
           </div>
         )}
       </section>
-      <section className="footer">footer</section>
     </div>
   );
 }
